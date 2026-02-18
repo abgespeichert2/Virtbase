@@ -14,6 +14,8 @@ struct VirtbaseApp: App {
     var authenticationModel: AuthenticationModel
     = AuthenticationModel()
     
+    @State private var refreshUpstream = 0
+    
     var body: some Scene {
         WindowGroup {
             Group {
